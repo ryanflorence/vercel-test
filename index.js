@@ -2,6 +2,10 @@ const express = require("express")
 
 let app = express();
 
+// normally you'd just do this, but vercel is supposed to be able to
+// serve these static files
+// app.use(express.static("public"));
+
 app.get("*", (req, res) => {
   let mod = require("./dynamic.js");
   let stuff = mod.stuff();
