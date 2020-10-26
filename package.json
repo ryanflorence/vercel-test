@@ -1,0 +1,8 @@
+{
+  "scripts": {
+    "build": "mkdir -p public/build && echo \"body { color: red }\" > public/build/index.css"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
