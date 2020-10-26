@@ -3,7 +3,7 @@ const express = require("express")
 let app = express();
 
 app.get("*", (req, res) => {
-  let mod = require("../dynamic.js");
+  let mod = require("./dynamic.js");
   let stuff = mod.stuff();
   let page = `<!doctype html>
     <html>

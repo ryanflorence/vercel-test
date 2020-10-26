@@ -1,17 +1,17 @@
 {
-  "functions": {
-    "api/index.js": {
-      "includeFiles": "dynamic.js"
+  "builds": [
+    {
+      "src": "index.js",
+      "use": "@vercel/node",
+      "config": {
+        "includeFiles": "dynamic.js"
+      }
     }
-  },
+  ],
   "routes": [
     {
-      "src": "/build/index.css",
-      "dest": "public/build/index.css"
-    },
-    {
       "src": "/(.*)",
-      "dest": "api/index.js"
+      "dest": "index.js"
     }
   ]
 }
