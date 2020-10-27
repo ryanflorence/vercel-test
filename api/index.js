@@ -1,4 +1,4 @@
-const express = require("express")
+const express = require("express");
 
 let app = express();
 
@@ -16,9 +16,9 @@ app.get("*", (req, res) => {
     <link rel="stylesheet" href="/build/index.css" />
     </head>
     <body>
-    ${stuff}`
-  res.set("content-type", "text/html")
-  res.end(page)
-})
+    ${stuff}`;
+  res.set("content-type", "text/html");
+  res.end(page);
+});
 
-module.exports = app
+module.exports = app;
