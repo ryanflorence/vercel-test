@@ -1,6 +1,10 @@
 {
   "builds": [
     {
+      "src": "public/**",
+      "use": "@vercel/static"
+    },
+    {
       "src": "index.js",
       "use": "@vercel/node",
       "config": {
@@ -9,6 +13,10 @@
     }
   ],
   "routes": [
+    {
+      "src": "/build/(.*)",
+      "dest": "/public/build/$1"
+    },
     {
       "src": "/(.*)",
       "dest": "index.js"
