@@ -1,17 +1,8 @@
 {
-  "builds": [
+  "rewrites": [
     {
-      "src": "index.js",
-      "use": "@vercel/node",
-      "config": {
-        "includeFiles": "dynamic.js"
-      }
-    }
-  ],
-  "routes": [
-    {
-      "src": "/(.*)",
-      "dest": "index.js"
+      "source": "/(.*)",
+      "destination": "/api"
     }
   ]
 }
