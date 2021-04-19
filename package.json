@@ -4,6 +4,7 @@
   "description": "",
   "license": "",
   "scripts": {
+    "vercel-build": "remix build2",
     "build": "remix build2",
     "dev": "remix dev",
     "start": "vercel dev"
