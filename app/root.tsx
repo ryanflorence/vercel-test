@@ -48,6 +48,7 @@ export default function App() {
         <Links />
       </head>
       <body>
+        <h1>Deploy from github + vercel</h1>
         <Outlet />
 
         <footer>
