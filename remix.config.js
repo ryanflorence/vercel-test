@@ -1,7 +1,7 @@
 module.exports = {
   appDirectory: "app",
-  browserBuildDirectory: "public/build",
-  publicPath: "/build/",
-  serverBuildDirectory: "server/build",
-  devServerPort: 8002
+  browserBuildDirectory: ".vercel_build_output/static",
+  publicPath: "/",
+  serverBuildDirectory: ".vercel_build_output/functions/node/server",
+  devServerPort: 8002,
 };
